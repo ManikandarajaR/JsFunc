@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Todo List
+        </title>
+        <script type="text/javascript">
+        console.log("Connected");
+            var todo = [];
+
+            var input = prompt("What would you like to do?")
+
+            
+            while(input !== "quit"){
+                if(input === "list"){
+                console.log(todo);
+                 }else if(input==="new"){
+                var newTodo = prompt("Enter new todo");
+                todo.push(newTodo);
+            }
+            input = prompt("What would you like to do?")
+            }
+            console.log("You Quit the app")
+
+        </script>
+    </head>
+    <body>
+        <h1>Todo List</h1>
+        <ul>
+        <li>"new" - Add A Todo</li>
+        <li>"List" - List all Todos</li>
+        <li>"quit" - Quit app</li>
+        </ul>
+    </body>
+</html>
